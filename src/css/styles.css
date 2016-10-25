@@ -1,0 +1,11 @@
+h1.backgroundclip{
+    background: url(/media/img/fog.jpg) fixed no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28vw;
+    font-weight: bold;
+}
+
+h1 {
+    color: orangered;
+}
