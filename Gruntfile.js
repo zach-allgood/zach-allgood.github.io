@@ -1,23 +1,72 @@
+// Gruntfile.js
+
 module.exports = function(grunt) {
 
-    // Project configuration.
+    // ===========================================================================
+    // CONFIGURE GRUNT ===========================================================
+    // ===========================================================================
     grunt.initConfig({
+
         pkg: grunt.file.readJSON('package.json'),
+
+        jshint: {
+            options: {
+                reporter: require('jshint-stylish')
+            },
+
+            build: ['Gruntfile.js', 'path/to/files']
+        },
+
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+                banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n'
             },
             build: {
-                src: 'src/<%= pkg.name %>.js',
-                dest: 'build/<%= pkg.name %>.min.js'
+                files: {
+                    'dist/js/*.js': 'src/js/*.js'
+                }
+            }
+        },
+
+        less: {
+            build: {
+                files: {
+                    'dist/css/*.css': 'src/css/*.less'
+                }
+            }
+        },
+
+        cssmin: {
+            options: {
+                banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n'
+            },
+            build: {
+                files: {
+                    'dist/css/*.min.css': 'src/css/*.css'
+                }
+            }
+        },
+
+        watch: {
+            stylesheets: {
+                files: ['src//*.css', 'src//*.less'],
+                tasks: ['less', 'cssmin']
+            },
+            scripts: {
+                files: 'src/**/*.js',
+                tasks: ['jshint', 'uglify']
             }
         }
     });
 
-    // Load the plugin that provides the "uglify" task.
+    // ===========================================================================
+    // LOAD GRUNT PLUGINS ========================================================
+    // ===========================================================================
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-
-    // Default task(s).
-    grunt.registerTask('default', ['uglify']);
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-less');
 
 };
