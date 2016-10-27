@@ -9,6 +9,10 @@ body{
 h1{
     font-size: 42pt;
 }
+
+.container-fluid{
+    padding: 0;
+}
 /*
     SITE NAV STYLES
 */
@@ -68,8 +72,9 @@ h2.quality{
     color: #49274A;
 }
 
-.jumbotron{
+.container-fluid .jumbotron{
     background-color: #F6F6F6;
+    border-radius: 0;
 }
 
 .jumbotron h1{
@@ -91,11 +96,21 @@ a h2.quality:hover{
 .about{
     background-color: inherit;
     color: #F8EEE7;
-    text-align: center;
+    padding-bottom: 5%;
 }
 
 .about h1{
     margin-bottom: 5%;
+    text-align: center;
+}
+
+.about h1::after{
+    content: "";
+    display: block;
+    background: #94618E;
+    height: 4px;
+    width: 300px;
+    margin: 1% auto;
 }
 
 .circle {
@@ -109,7 +124,7 @@ a h2.quality:hover{
     margin: auto;
 }
 
-.innerText{
+.innerTitle{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -118,7 +133,96 @@ a h2.quality:hover{
 }
 
 @media (min-width: 768px) {
-    .innerText{
+    .innerTitle{
         font-size: 2vw;
     }
+}
+
+/*
+    CONTACT ME STYLES
+*/
+
+.contact{
+    background-color: #F6F6F6;
+    padding: 1% 2%;
+}
+
+.contact h1{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contact h1::after{
+    content: "";
+    display: block;
+    background: #94618E;
+    height: 4px;
+    width: 300px;
+    margin: 1% auto;
+}
+
+@media(max-width: 768px){
+    .contLinks{
+        width: 100%;
+        padding: 0 10%;
+    }
+}
+
+
+.contInfo{
+    width: 50%;
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 5px auto;
+}
+
+
+@media(min-width: 768px){
+    @media(max-width: 1600px) {
+        .contInfo {
+            clear: left;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 550px){
+    .contInfo{
+        padding: 0;
+        width: 25%;
+        margin: auto;
+    }
+
+    .fa{
+        margin: 5px 40%;
+    }
+
+    .contText{
+        display: none;
+    }
+}
+
+.form-control{
+    margin: 5px;
+}
+
+.form-control:focus{
+    border-color: #94618E;
+}
+
+.btn{
+    margin: 5px;
+}
+
+/*
+    FOOTER STYLES
+*/
+footer{
+    color: #F8EEE7;
+}
+
+footer div p{
+    text-align: center;
+    margin: 5px auto;
 }
