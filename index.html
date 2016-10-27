@@ -6,16 +6,17 @@
     <meta name="description" content="Website displaying Zach Allgood's personal and professional highlights.">
     <meta name="author" content="Zach Allgood">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/bootstrap.css">
-    <link rel="stylesheet" href="src/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="src/js/jquery-3.1.1.min.js"></script>
     <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/main.js"></script>
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse nav-down">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -26,53 +27,180 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <div class="container-fluid">
     <div class="jumbotron text-center">
-        <h1 class="backgroundclip">Zach Allgood</h1>
+        <a name="home"><h1 class="backgroundclip">Zach Allgood</h1></a>
         <div class="row">
-            <a href="#"><h2 class="col-sm-4 quality">Web developer</h2></a>
-            <a href="#"><h2 class="col-sm-4 quality">Student</h2></a>
-            <a href="#"><h2 class="col-sm-4 quality">Mentor</h2></a>
+            <a href="#"><h2 class="col-sm-4 quality engineer">Software Engineer</h2></a>
+            <a href="#"><h2 class="col-sm-4 quality student">Student</h2></a>
+            <a href="#"><h2 class="col-sm-4 quality mentor">Mentor</h2></a>
+        </div>
+        <div class="row info engineerInfo">
+            <h2>Professional Experience</h2>
+            <div class="col-sm-2">
+                <img src="media/img/llama.png">
+            </div>
+            <div class="col-sm-6">
+                <h3>Classy Llama</h3>
+                <h4 class="jobTitle">Jr. Software Engineer</h4>
+                <p class="timePeriod">October 2016 - Present</p>
+                <p>Building online stores using Magento. Common languages used:</p>
+                <ul>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row info studentInfo">
+            <h2>Educational Experience</h2>
+            <div class="col-sm-1">
+                <img src="media/img/otc.png">
+            </div>
+            <div class="col-sm-7">
+                <h3>Ozark Technical Community College</h3>
+                <p class="timePeriod">August 2015 - Current</p>
+                <p>Took CIS classes while finishing my senior year of high school. Noteworthy classes are</p>
+                <ul>
+                    <li>Web Site Development I</li>
+                    <li>Problem Solving and Programming Concepts</li>
+                    <li>C# Programming I</li>
+                    <li>Systems Analysis and Design</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row info mentorInfo">
+            <h2>Mentor Experience</h2>
+            <div class="col-sm-2">
+                <img src="media/img/kickapoo.jpg">
+            </div>
+            <div class="col-sm-6">
+                <h3>Kickapoo High School</h3>
+                <h4 class="jobTitle">A+ Tutor</h4>
+                <p class="timePeriod">August 2014 - January 2015 & August 2015 - January 2016</p>
+                <p>Tutored students in the Introduction to Computer Programming and Advanced Computer Programming classes. Both classes taught Java.</p>
+            </div>
         </div>
     </div>
 
     <div class="about">
-        <h1>About Me </h1>
+        <a name="about"><h1>About Me</h1></a>
         <div class="row">
             <div class="col-sm-4">
-                <div class="circle">
-                    <p class="innerTitle">The Beginning</p>
+                <a class="circle" href="#">
+                    <div class="circle">
+                        <p class="innerTitle">The Beginning</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="circle" href="#">
+                    <div class="circle">
+                        <p class="innerTitle">School</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="circle" href="#">
+                    <div class="circle">
+                        <p class="innerTitle">The Present</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="experience">
+        <a name="experience"><h1>Language Experience</h1></a>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 langLeft">
+                <h2 class="progLangLeft">HTML</h2>
+                <div class="progress">
+                    <div class="progress-bar html" style="width:0%">
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="circle">
-                    <p class="innerTitle">School</p>
+                <h2 class="progLangRight">CSS</h2>
+                <div class="progress">
+                    <div class="progress-bar css" style="width:0%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 langLeft">
+                <h2 class="progLangLeft">PHP</h2>
+                <div class="progress">
+                    <div class="progress-bar php" style="width:0%">
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="circle">
-                    <p class="innerTitle">The Present</p>
+                <h2 class="progLangRight">JavaScript</h2>
+                <div class="progress">
+                    <div class="progress-bar jscript" style="width:0%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 langLeft">
+                <h2 class="progLangLeft">jQuery</h2>
+                <div class="progress">
+                    <div class="progress-bar jq" style="width:0%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h2 class="progLangRight">MySQL</h2>
+                <div class="progress">
+                    <div class="progress-bar mysql" style="width:0%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 langLeft">
+                <h2 class="progLangLeft">Java</h2>
+                <div class="progress">
+                    <div class="progress-bar java" style="width:0%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h2 class="progLangRight">C#</h2>
+                <div class="progress">
+                    <div class="progress-bar csharp" style="width:0%">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="contact">
-        <h1>Contact Me</h1>
+        <a name="contact"><h1>Contact Me</h1></a>
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-4 contLinks">
-                    <p class="contInfo"><span class="fa fa-linkedin-square fa-2x"></span><span class="contText"> LinkedIn</span></p>
-                    <p class="contInfo"><span class="fa fa-github fa-2x"></span><span class="contText"> GitHub</span></p>
-                    <p class="contInfo"><span class="fa fa-envelope fa-2x"></span><span class="contText"> zacharycallgood@gmail.com</span></p>
-                    <p class="contInfo"><span class="fa fa-phone fa-2x"></span><span class="contText"> (417)827-8588</span></p>
+                    <p class="contInfo"><a href="https://www.linkedin.com/in/zach-allgood"><span class="fa fa-linkedin-square fa-2x"></span><span class="contText"> LinkedIn</span></a></p>
+                    <p class="contInfo"><a href="https://github.com/zach-allgood"><span class="fa fa-github fa-2x"></span><span class="contText"> GitHub</span></a></p>
+                    <p class="contInfo"><a href="mailto:zacharycallgood@gmail.com"><span class="fa fa-envelope fa-2x"></span><span class="contText"> zacharycallgood@gmail.com</span></a></p>
+                    <p class="contInfo"><a href="tel://1-417-827-8588"><span class="fa fa-phone fa-2x"></span><span class="contText"> (417)827-8588</span></a></p>
             </div>
             <div class="col-sm-4">
                 <form>

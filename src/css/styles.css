@@ -8,11 +8,19 @@ body{
 
 h1{
     font-size: 42pt;
+    margin-bottom: 5%;
+    text-align: center;
 }
 
 .container-fluid{
     padding: 0;
 }
+
+a, a:hover, a:active, a:focus{
+    text-decoration: none;
+    color: inherit;
+}
+
 /*
     SITE NAV STYLES
 */
@@ -23,10 +31,16 @@ h1{
     border: none;
     border-radius: 0;
     margin-bottom: 0;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 100;
 }
 
 .navbar-inverse .navbar-nav > li > a{
-    color: #F6F6F6;
+    color: #F8EEE7;
     text-shadow: none;
 }
 
@@ -44,7 +58,7 @@ h1{
 
 .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
     background-color: #49274A;
-    color: #F6F6F6;
+    color: #F8EEE7;
     box-shadow: none;
     -webkit-box-shadow: none;
 }
@@ -56,12 +70,16 @@ h1{
     }
 }
 
+.nav-up{
+    top: -50px;
+}
+
 /*
     JUMBOTRON AND STARTING INFO STYLES
 */
 
 h1.backgroundclip{
-    background: url(/media/img/fog.jpg) fixed no-repeat;
+    background: url(/media/img/lavender.jpg) fixed no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 10vw;
@@ -89,6 +107,75 @@ a h2.quality:hover{
     color: #94618E;
 }
 
+.engineerInfo{
+    display: none;
+}
+
+.studentInfo{
+    display: none;
+}
+
+.mentorInfo{
+    display: none;
+}
+
+.info{
+    color: #F8EEE7;
+    background-color: #94618E;
+    padding: 2%;
+    text-align: left;
+    position: relative;
+    height: 400px;
+}
+
+.info h2{
+    margin: 20px auto 20px auto;
+}
+
+.info h3{
+    margin-top: 0;
+}
+
+.info img{
+    display: none;
+}
+
+.jobTitle{
+    font-weight: bold;
+}
+
+.timePeriod{
+    font-style: italic;
+}
+
+.info:after{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #F6F6F6;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -10px;
+}
+
+@media(min-width: 768px){
+
+    .info h2{
+        margin-top: 10px;
+    }
+    .info img{
+        display: block;
+        width: 100%;
+    }
+
+    .info:after{
+        left: 15%;
+        margin-left: auto;
+    }
+}
+
 /*
     ABOUT ME STYLES
 */
@@ -97,11 +184,6 @@ a h2.quality:hover{
     background-color: inherit;
     color: #F8EEE7;
     padding-bottom: 5%;
-}
-
-.about h1{
-    margin-bottom: 5%;
-    text-align: center;
 }
 
 .about h1::after{
@@ -113,7 +195,12 @@ a h2.quality:hover{
     margin: 1% auto;
 }
 
-.circle {
+a.circle{
+    color: #F8EEE7;
+    text-decoration: none;
+}
+
+div.circle {
     width: 50%;
     height:0;
     padding-bottom: 50%;
@@ -139,16 +226,52 @@ a h2.quality:hover{
 }
 
 /*
+    EXPERIENCE STYLES
+*/
+
+.experience{
+    background-color: #F6F6F6;
+    padding-bottom: 3%;
+}
+
+.experience h1{
+    padding: 2% 1% 0 1%;
+}
+
+.experience h1::after{
+    content: "";
+    display: block;
+    background: #94618E;
+    height: 4px;
+    width: 300px;
+    margin: 1% auto;
+}
+
+div.langLeft{
+    border-right: 1px solid black;
+}
+
+.progress-bar {
+    background-image: -webkit-linear-gradient(top, #94618E 0%, #49274A 100%);
+    background-image:      -o-linear-gradient(top, #94618E 0%, #49274A 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#94618E), to(#49274A));
+    background-image:         linear-gradient(to bottom, #94618E 0%, #49274A 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94618E', endColorstr='#49274A', GradientType=0);
+    background-repeat: repeat-x;
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+/*
     CONTACT ME STYLES
 */
 
 .contact{
-    background-color: #F6F6F6;
+    color: #F8EEE7;
     padding: 1% 2%;
 }
 
 .contact h1{
-    text-align: center;
     margin-bottom: 0;
 }
 
@@ -219,7 +342,7 @@ a h2.quality:hover{
     FOOTER STYLES
 */
 footer{
-    color: #F8EEE7;
+    background-color: #F6F6F6;
 }
 
 footer div p{
