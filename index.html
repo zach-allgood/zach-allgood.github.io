@@ -1,19 +1,16 @@
-<!--
-<script>
-    window.location = "creation.html";
-</script>
--->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Zach Allgood</title>
     <meta charset="UTF-8">
     <meta name="description" content="Website displaying Zach Allgood's personal and professional highlights.">
     <meta name="author" content="Zach Allgood">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/bootstrap.css">
     <link rel="stylesheet" href="src/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="src/css/styles.css">
     <script src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/bootstrap.js"></script>
 </head>
 <body>
 
@@ -25,17 +22,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Portfolio</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </div>
@@ -43,8 +35,33 @@
 
 <div class="jumbotron text-center">
     <h1 class="backgroundclip">Zach Allgood</h1>
-    <p>Web developer, software engineer, student, mentor</p>
+    <div class="row">
+        <a href="#"><h2 class="col-sm-4 quality">Web developer</h2></a>
+        <a href="#"><h2 class="col-sm-4 quality">Student</h2></a>
+        <a href="#"><h2 class="col-sm-4 quality">Mentor</h2></a>
+    </div>
 </div>
 
+<div class="about">
+    <h1>About Me</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="circle">
+                <p class="innerText">The Beginning</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="circle">
+                <p class="innerText">School</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="circle">
+                <p class="innerText">The Present</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
+</html>

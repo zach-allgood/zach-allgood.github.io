@@ -1,11 +1,124 @@
+/*
+    SITE BODY STYLES
+*/
+
+body{
+    background-color: #2B2B2B;
+}
+
+h1{
+    font-size: 42pt;
+}
+/*
+    SITE NAV STYLES
+*/
+
+.navbar-inverse, .navbar{
+    background-image: none;
+    background-color: #2B2B2B;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color: #F6F6F6;
+    text-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+    color: #94618E;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .active > a{
+    background-image: none;
+    background-color: #94618E;
+    color: #F8EEE7;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: #49274A;
+    color: #F6F6F6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+    }
+}
+
+/*
+    JUMBOTRON AND STARTING INFO STYLES
+*/
+
 h1.backgroundclip{
     background: url(/media/img/fog.jpg) fixed no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 28vw;
+    font-size: 10vw;
     font-weight: bold;
 }
 
-h1 {
-    color: orangered;
+h2.quality{
+    color: #49274A;
+}
+
+.jumbotron{
+    background-color: #F6F6F6;
+}
+
+.jumbotron h1{
+    padding: 2%;
+}
+
+a h2.quality{
+    text-decoration: none;
+}
+
+a h2.quality:hover{
+    color: #94618E;
+}
+
+/*
+    ABOUT ME STYLES
+*/
+
+.about{
+    background-color: inherit;
+    color: #F8EEE7;
+    text-align: center;
+}
+
+.about h1{
+    margin-bottom: 5%;
+}
+
+.circle {
+    width: 50%;
+    height:0;
+    padding-bottom: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #94618E;
+    margin: auto;
+}
+
+.innerText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+}
+
+@media (min-width: 768px) {
+    .innerText{
+        font-size: 2vw;
+    }
 }
