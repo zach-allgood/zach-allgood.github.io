@@ -86,10 +86,6 @@ h1.backgroundclip{
     font-weight: bold;
 }
 
-h2.quality{
-    color: #49274A;
-}
-
 .container-fluid .jumbotron{
     background-color: #F6F6F6;
     border-radius: 0;
@@ -97,6 +93,17 @@ h2.quality{
 
 .jumbotron h1{
     padding: 2%;
+}
+
+h2.quality{
+    color: #49274A;
+    font-size: 16pt;
+}
+
+@media(min-width: 880px){
+    h2.quality {
+        font-size: 3vw;
+    }
 }
 
 a h2.quality{
@@ -170,9 +177,13 @@ a h2.quality:hover{
         width: 100%;
     }
 
-    .info:after{
+    .engineerInfo:after{
         left: 15%;
-        margin-left: auto;
+        margin-left: -10px;
+    }
+    .mentorInfo:after{
+        left: 83%;
+        margin-left: -10px;
     }
 }
 
