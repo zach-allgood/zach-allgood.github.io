@@ -152,20 +152,19 @@ $(function(){
         var parentDiv = circleDiv.parent();
 
         parentDiv.parent().children().not(parentDiv).hide(500);
+        parentDiv.parent().children().not(parentDiv).find('.innerTitle').fadeOut(100);
         setTimeout(function () {
             parentDiv.parent().children().not(parentDiv).toggleClass('col-sm-4 col-sm-0');
         }, 500);
 
         setTimeout(function () {
             parentDiv.toggleClass('col-sm-4 col-sm-12', 1000);
-            if ($(window).width() >= 768) {
-                circleDiv.find('.innerTitle').animate({
-                    top: '5%'
-                }, 1000);
-            } else{
-                circleDiv.find('.innerTitle').animate({
-                    top: '10%'
-                }, 1000);
+
+            circleDiv.find('.innerTitle').animate({
+                top: '10%'
+            }, 1000);
+
+            if ($(window).width() < 768) {
 
                 circleDiv.children().animate({
                     width: '100%',
@@ -180,7 +179,7 @@ $(function(){
 
         parentDiv.toggleClass('col-sm-12 col-sm-4');
 
-        if($(window).width() <= 768){
+        if($(window).width() < 768){
             circleDiv.children().animate({
                 width: '50%',
                 padding: 'auto auto 50% auto'
@@ -191,23 +190,21 @@ $(function(){
         }, 1000, function(){
             parentDiv.parent().children().not(parentDiv).toggleClass('col-sm-0 col-sm-4');
             parentDiv.parent().children().not(parentDiv).slideDown(500);
+            parentDiv.parent().children().not(parentDiv).find('.innerTitle').fadeIn(500);
         });
     }
 
     $('.circleLink').click(function(e){
         e.preventDefault();
-        var className = $(this).attr('class');
+
         var parentDiv = $(this).parent();
 
         //Expands circle, hiding others and adding info
-        if(className.indexOf('beginning') >= 0) {
-            if(parentDiv.attr('class').indexOf('col-sm-4') >= 0){
-                expandCircle($(this));
-            }
-            else{
-                shrinkCircle($(this));
-            }
-
+        if(parentDiv.attr('class').indexOf('col-sm-4') >= 0){
+            expandCircle($(this));
+        }
+        else{
+            shrinkCircle($(this));
         }
     });
 
@@ -218,8 +215,6 @@ $(function(){
                 'width': '100%',
                 'padding-bottom': '100%'
             });
-
-            $('.circle').children('.innerTitle').css('top', '10%');
         }
 
         else if($('.circleLink').parent().attr('class').indexOf('col-sm-12') >= 0){
@@ -227,8 +222,6 @@ $(function(){
                 'width': '50%',
                 'padding-bottom': '50%'
             });
-
-            $('.circle').children('.innerTitle').css('top', '5%');
         }
 
         else{
@@ -236,8 +229,6 @@ $(function(){
                 'width': '50%',
                 'padding-bottom': '50%'
             });
-
-            $('.circle').children('.innerTitle').css('top', '50%');
         }
 
     });

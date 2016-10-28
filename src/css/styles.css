@@ -219,7 +219,7 @@ div.circle {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #94618E;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .col-sm-4, .col-sm-12{
