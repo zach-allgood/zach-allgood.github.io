@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         less: {
             build: {
                 files: {
-                    'dist/css/*.css': 'src/css/*.less'
+                    'dist/css/styles.css': 'src/css/styles.less'
                 }
             }
         },
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'dist/css/*.min.css': 'src/css/*.css'
+                    'dist/css/styles.min.css': 'dist/css/*.css'
                 }
             }
         },
