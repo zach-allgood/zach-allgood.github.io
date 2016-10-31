@@ -100,12 +100,6 @@ h2.quality{
     font-size: 16pt;
 }
 
-@media(min-width: 880px){
-    h2.quality {
-        font-size: 3vw;
-    }
-}
-
 a h2.quality{
     text-decoration: none;
 }
@@ -165,6 +159,12 @@ a h2.quality:hover{
     top: 0;
     left: 50%;
     margin-left: -10px;
+}
+
+@media(min-width: 880px){
+    h2.quality {
+        font-size: 3vw;
+    }
 }
 
 @media(min-width: 768px){
@@ -231,7 +231,7 @@ div.circle {
 
 .innerTitle{
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 6vw;
@@ -244,15 +244,21 @@ div.circle {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px;
+    font-size: 2.5vw;
+    width: 85%;
 }
 
 @media (min-width: 768px) {
     .innerTitle{
+        top: 43%;
         font-size: 2vw;
     }
-}
 
+    .innerInfo{
+        width: 45%;
+        font-size: 1.2vw;
+    }
+}
 /*
     EXPERIENCE STYLES
 */
