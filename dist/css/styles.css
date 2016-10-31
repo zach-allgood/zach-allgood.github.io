@@ -79,6 +79,7 @@ h1.backgroundclip {
   -webkit-text-fill-color: transparent;
   font-size: 10vw;
   font-weight: bold;
+  margin-bottom: auto;
 }
 .container-fluid .jumbotron {
   background-color: #F6F6F6;
@@ -86,6 +87,15 @@ h1.backgroundclip {
 }
 .container-fluid .jumbotron h1 {
   padding: 2%;
+}
+.portrait-circle {
+  background: url('/media/img/me.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: auto;
 }
 h2.quality {
   color: #49274A;
