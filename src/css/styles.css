@@ -39,6 +39,10 @@ a, a:hover, a:active, a:focus{
     z-index: 100;
 }
 
+div.navbar-collapse{
+    background-color: #2b2b2b;
+}
+
 .navbar-inverse .navbar-nav > li > a{
     color: #F8EEE7;
     text-shadow: none;
