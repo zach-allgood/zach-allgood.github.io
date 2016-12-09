@@ -1,273 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta charset="utf-8" />
     <title>Zach Allgood</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Website displaying Zach Allgood's personal and professional highlights.">
-    <meta name="author" content="Zach Allgood">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="57x57" href="media/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="media/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="media/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="media/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="media/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="media/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="media/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="media/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="media/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="media/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="media/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="media/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="media/icons/favicon-16x16.png">
-    <link rel="manifest" href="media/icons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="media/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <script src="src/js/jquery-3.1.1.min.js"></script>
-    <script src="src/js/bootstrap.js"></script>
-    <script src="src/js/main.js"></script>
-    <link rel="stylesheet" href="src/css/bootstrap.css">
-    <link rel="stylesheet" href="src/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="dist/css/styles.min.css">
-    <style></style>
+    <link href="view/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="view/styles.css" rel="stylesheet" />
+    <script src="view/js/jquery-3.1.1.min.js"></script>
+    <script src="view/script.js"></script>
 </head>
 <body>
-
-<nav class="navbar navbar-inverse nav-down">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </div>
+<div id="landing" class="jumbotron">
+    <div class="container">
+        <h1 class="name">Zach Allgood</h1>
+        <p class="tag-line">Web R&eacute;sum&eacute;</p>
     </div>
-</nav>
-<div class="container-fluid">
-    <div class="jumbotron text-center">
-        <a name="home"><h1 class="backgroundclip">Zach Allgood</h1></a>
-        <div class="portrait-circle"></div>
-
+    <div class="overlay"></div>
+</div>
+<div class="white-background">
+    <div id="personal" class="container">
+        <h1 class="title">Personal</h1>
+        <p class="desc">About my life</p>
+        <hr/>
         <div class="row">
-            <a href="#"><h2 class="col-sm-4 quality engineer">Software Engineer</h2></a>
-            <a href="#"><h2 class="col-sm-4 quality student">Student</h2></a>
-            <a href="#"><h2 class="col-sm-4 quality mentor">Mentor</h2></a>
-        </div>
-        <div class="row info engineerInfo">
-            <h2>Professional Experience</h2>
-            <div class="col-sm-2">
-                <img src="media/img/llama.png">
+            <div class="col-sm-4">
+                <h2 class="subtitle">About Me</h2>
+                <p class="body-text">I live to code. I have been programming since I was around 7 years old, but I really
+                got into it around 14 years old when I was consistently writing code and improving myself. I'm currently
+                employed a Jr. Software Engineer at Classy Llama. I'm also a student majoring in CS, focusing on web development.</p>
             </div>
-            <div class="col-sm-6">
-                <h3>Classy Llama</h3>
-                <h4 class="jobTitle">Jr. Software Engineer</h4>
-                <p class="timePeriod">October 2016 - Present</p>
-                <p>Building online stores using Magento. Common languages used:</p>
-                <ul>
-                    <li>PHP</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                </ul>
+            <div class="col-sm-4 text-center">
+                <img src="view/img/me.jpg" class="portrait">
             </div>
-        </div>
-        <div class="row info studentInfo">
-            <h2>Educational Experience</h2>
-            <div class="col-sm-2">
-                <img src="media/img/otc.png">
-            </div>
-            <div class="col-sm-6">
-                <h3>Ozark Technical Community College</h3>
-                <p class="timePeriod">August 2015 - Current</p>
-                <p>Took CIS classes while finishing my senior year of high school. Noteworthy classes are</p>
-                <ul>
-                    <li>Web Site Development I</li>
-                    <li>Problem Solving and Programming Concepts</li>
-                    <li>C# Programming I</li>
-                    <li>Systems Analysis and Design</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row info mentorInfo">
-            <h2>Mentor Experience</h2>
-            <div class="col-sm-2">
-                <img src="media/img/kickapoo.jpg">
-            </div>
-            <div class="col-sm-6">
-                <h3>Kickapoo High School</h3>
-                <h4 class="jobTitle">A+ Tutor</h4>
-                <p class="timePeriod">August 2014 - January 2015 & August 2015 - January 2016</p>
-                <p>Tutored students in the Introduction to Computer Programming and Advanced Computer Programming classes. Both classes taught Java.</p>
+            <div class="col-sm-4">
+                <h2 class="subtitle">Details</h2>
+                <h3>Birthday:</h3>
+                <p class="body-text">September 1, 1998</p>
+                <h3>Location:</h3>
+                <p class="body-text">Springfield, MO</p>
+                <h3>Favorite color:</h3>
+                <p class="body-text">Purple</p>
             </div>
         </div>
     </div>
-
-    <div class="about">
-        <a name="aboutMe"><h1>About Me</h1></a>
-        <div class="row">
-            <div class="col-sm-4">
-                <a class="circleLink beginning" href="#">
-                    <div class="circle">
-                        <h2 class="innerTitle">The Beginning</h2>
-                        <div class="innerInfo">
-                            <p>
-                                I started programming when I was 7. I started off in visual basic but quickly moved to C++.
-                                I started developing web sites when I was around 12 years old. I experimented with a lot of languages up until I was about 16.
-                                Some of the the experiments included game development, desktop application development, and Minecraft mods.
-                                At 16, I really started focusing on web development and how to improve as a programmer overall.
-                                I got an internship as a a software engineer intern at Classy Llama in October of 2015 and started my career.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a class="circleLink school" href="#">
-                    <div class="circle">
-                        <h2 class="innerTitle">School</h2>
-                        <div class="innerInfo">
-                            <p>
-                                I took my first programming class when I was a sophomore at Kickapoo High School. I learned RobotC using hands-on experience with robots.
-                                In my junior year, I took a web design class and learned the basics of web development. In that year, I also took Intro to Computer Programming
-                                and Advanced Computer Programming, which covered Java and the basic thought patterns and concepts that a programmer should be comfortable with.
-                                In my senior year, I really focused on learning the trade. I took multiple different classes including Intro to Computer Science, Web Site Development I,
-                                Problem Solving and Programming Concepts, C# Programming I, and Systems Analysis and Design. All of the programming classes that I had taken my senior year
-                                except Intro to Computer Science were taught at Ozark Technical Community College (OTC).
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a class="circleLink present" href="#">
-                    <div class="circle">
-                        <h2 class="innerTitle">The Present</h2>
-                        <div class="innerInfo">
-                            <p>
-                                Currently I am a Jr. Software Engineer at Classy Llama in Springfield, MO. Although my main focus is web development,
-                                I haven't completely dropped everything else. I do still work with C#, Java, and Python every now and then when I feel like
-                                refreshing myself in the languages. I enjoy the backend side of programming rather than the UI or frontend, however I do still
-                                enjoy them as well. I'm a very logical person and I love math, so it makes sense that I prefer working with algorithms and complex
-                                problem solving.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="experience">
-        <a name="experience"><h1>Language Experience</h1></a>
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4 langLeft">
-                <h2 class="progLangLeft">HTML</h2>
-                <div class="progress">
-                    <div class="progress-bar html" style="width:0%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h2 class="progLangRight">CSS</h2>
-                <div class="progress">
-                    <div class="progress-bar css" style="width:0%">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4 langLeft">
-                <h2 class="progLangLeft">PHP</h2>
-                <div class="progress">
-                    <div class="progress-bar php" style="width:0%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h2 class="progLangRight">JavaScript</h2>
-                <div class="progress">
-                    <div class="progress-bar jscript" style="width:0%">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4 langLeft">
-                <h2 class="progLangLeft">jQuery</h2>
-                <div class="progress">
-                    <div class="progress-bar jq" style="width:0%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h2 class="progLangRight">MySQL</h2>
-                <div class="progress">
-                    <div class="progress-bar mysql" style="width:0%">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4 langLeft">
-                <h2 class="progLangLeft">Java</h2>
-                <div class="progress">
-                    <div class="progress-bar java" style="width:0%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h2 class="progLangRight">C#</h2>
-                <div class="progress">
-                    <div class="progress-bar csharp" style="width:0%">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact">
-        <a name="contact"><h1>Contact Me</h1></a>
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4 contLinks">
-                    <p class="contInfo"><a href="https://www.linkedin.com/in/zach-allgood"><span class="fa fa-linkedin-square fa-2x"></span><span class="contText"> LinkedIn</span></a></p>
-                    <p class="contInfo"><a href="https://github.com/zach-allgood"><span class="fa fa-github fa-2x"></span><span class="contText"> GitHub</span></a></p>
-                    <p class="contInfo"><a href="mailto:zacharycallgood@gmail.com"><span class="fa fa-envelope fa-2x"></span><span class="contText"> zacharycallgood@gmail.com</span></a></p>
-                    <p class="contInfo"><a href="tel://1-417-827-8588"><span class="fa fa-phone fa-2x"></span><span class="contText"> (417)827-8588</span></a></p>
-            </div>
-            <div class="col-sm-4">
-                <form action="https://formspree.io/zacharycallgood@gmail.com" method="POST">
-                    <input type="text" class="form-control" value="Name" id="name" name="name">
-                    <input type="email" class="form-control" value="Email Address" id="email" name="email">
-                    <input type="text" class="form-control" value="Subject" id="subject" name="subject">
-                    <textarea class="form-control" rows="3" id="message" name="message">Message</textarea>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
+</div>
+<div class="purple-background">
+    <div id="experience" class="container">
 
     </div>
 </div>
-<footer>
-    <div class="row">
-        <p class="col-sm-12">&copy;2016 Zach Allgood</p>
-    </div>
-</footer>
 </body>
 </html>
