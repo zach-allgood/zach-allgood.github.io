@@ -24,10 +24,8 @@ h3{
     background-color: #F0F0F0;
 }
 
-.purple-background {
-    background-color: #9A32CD;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+.beige-background {
+    background-color: #eedfcc;
 }
 
 h1.title {
@@ -40,6 +38,11 @@ p.desc {
     font-size: 18pt;
     font-weight: 200;
     margin-bottom: 30px;
+}
+
+span.origin {
+    font-style: italic;
+    font-weight: 100;
 }
 
 @media screen and (min-width: 992px){
@@ -86,10 +89,10 @@ p.desc {
 #landing .overlay {
     background-color: #9A32CD;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     opacity: 0.75;
     filter: alpha(opacity=75);
     z-index: 5;
@@ -127,4 +130,34 @@ p.desc {
     border-radius: 50%;
     border: 3px solid rgba(154,50,205, 0.5);
     width: 100%;
+}
+
+/*
+    EXPERIENCE DIV STYLES
+*/
+#experience .row {
+    margin-bottom: 50px;
+}
+
+#experience .subtitle{
+    margin-bottom: 20px;
+}
+
+#experience .company, #experience .school{
+    margin-top: 0;
+}
+
+#experience .job-title, #experience .degree{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#experience .timespan{
+    font-style: italic;
+}
+
+#experience .job-desc > span, #experience .school-desc > span {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
 }
