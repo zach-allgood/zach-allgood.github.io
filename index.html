@@ -4,18 +4,42 @@
     <meta charset="utf-8" />
     <title>Zach Allgood</title>
     <link href="view/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="view/css/font-awesome.min.css" rel="stylesheet" />
     <link href="view/styles.css" rel="stylesheet" />
     <script src="view/js/jquery-3.1.1.min.js"></script>
+    <script src="view/js/bootstrap.min.js"></script>
     <script src="view/script.js"></script>
 </head>
-<body>
+<body data-type="scroll" data-target="#side-nav" data-offset="20">
 <div id="landing" class="jumbotron">
     <div class="container">
         <h1 class="name">Zach Allgood</h1>
         <p class="tag-line">Web R&eacute;sum&eacute;</p>
     </div>
     <div class="overlay"></div>
+    <a href="#personal" class="scroll-down">
+        <i class="fa fa-chevron-down"></i>
+    </a>
 </div>
+<nav id="side-nav" class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-target">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse navbar-target">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#personal">Personal</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">R&eacute;sum&eacute;</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="white-background">
     <div id="personal" class="container">
         <h1 class="title">Personal</h1>
@@ -29,7 +53,7 @@
                 employed a Jr. Software Engineer at Classy Llama. I'm also a student majoring in CS, focusing on web development.</p>
             </div>
             <div class="col-sm-4 text-center">
-                <img src="view/img/me.jpg" class="portrait">
+                <img src="view/img/me.jpg" alt="Portrait" class="portrait">
             </div>
             <div class="col-sm-4">
                 <h2 class="subtitle">Details</h2>
@@ -79,6 +103,7 @@
                 </p>
             </div>
         </div>
+        <hr />
         <h2 class="subtitle">Educational</h2>
         <div class="row">
             <div class="col-md-4">
@@ -88,12 +113,109 @@
             <div class="col-md-8">
                 <p class="degree">Transfer Degree (CIS Electives)</p>
                 <p class="school-desc">
-                    <span>During my senior year in high school</span>
-                    <span><a href="http://www.classyllama.com">classyllama.com</a></span>
+                    <span>During my senior year in high school I participated in a program where I attend college CIS
+                        classes while also completing the classes I needed at my high school to finish senior year. I
+                        took basic intro CIS classes that covered Python, basic web development, server and database
+                        management, and C#. I'm now studying to get my transfer degree so that I can get a Bachelor's
+                        in CS at Missouri State University.</span>
+                    <span><a href="https://www.otc.edu/">otc.edu</a></span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="school">Kickapoo High School</h3>
+                <p class="timespan">Aug 2012 - May 2016</p>
+            </div>
+            <div class="col-md-8">
+                <p class="degree">High School Diploma</p>
+                <p class="school-desc">
+                    <span>At Kickapoo I participated in Future Business Leaders of America (FBLA), Technology Student
+                        Association (TSA), Kickapoo U, A+, and multiple Dual Credit courses. In FBLA I competed in many
+                        competitions, the most noteworthy being that I competed at the national level in Help Desk.
+                        Kickapoo U and A+ pushed me to take classes that would further benefit me past high school, such
+                        as Computer Applications where I learned advanced and in depth techniques for the Microsoft Office
+                        Suite, Public Speaking, Intro to Web Development, Internship, and Capstone.</span>
+                    <span><a href="http://kickapoo.spsk12.org/pages/khs">kickapoo.spsk12.org/pages/khs</a></span>
                 </p>
             </div>
         </div>
     </div>
+</div>
+<div class="white-background">
+    <div id="skills" class="container">
+        <h1 class="title">Skills</h1>
+        <p class="desc">Always code as if the guy who ends up maintaining your code will be a violent psychopath who
+            knows where you live. <span class="origin">-John Woods</span>
+        </p>
+        <hr />
+        <div class="row">
+            <div class="col-md-4 skill-col">
+                <h3 class="subtitle">Very Experienced</h3>
+                <ul class="skills-list">
+                    <li class="skill">HTML</li>
+                    <li class="skill">CSS</li>
+                    <li class="skill">PHP</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">JQuery</li>
+                    <li class="skill">Magento 2</li>
+                    <li class="skill">SQL</li>
+                    <li class="skill">Git</li>
+                    <li class="skill">Microsoft Office</li>
+                </ul>
+            </div>
+            <div class="col-md-4 skill-col">
+                <h3 class="subtitle">Semi-Experienced</h3>
+                <ul class="skills-list">
+                    <li class="skill">Java</li>
+                    <li class="skill">C#</li>
+                    <li class="skill">KnockoutJS</li>
+                    <li class="skill">ReactJS</li>
+                    <li class="skill">LESS</li>
+                    <li class="skill">Magento 1</li>
+                    <li class="skill">Command line</li>
+                </ul>
+            </div>
+            <div class="col-md-4 skill-col">
+                <h3 class="subtitle">Little Experience</h3>
+                <ul class="skills-list">
+                    <li class="skill">Python</li>
+                    <li class="skill">C++</li>
+                    <li class="skill">Visual Basic</li>
+                    <li class="skill">Adobe Photoshop</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <h1 class="title">Contact</h1>
+        <p class="desc">Science may never come up with a better office communication system than the coffee break.
+            <span class="origin">- Earl Wilson</span>
+        </p>
+        <hr />
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="contactLink"><a href=""><i class="fa fa-envelope fa-2x fa-fw"></i>
+                    zacharycallgood@gmail.com</a></p>
+            </div>
+            <div class="col-sm-6">
+                <p class="contactLink"><a href="https://www.linkedin.com/in/zach-allgood"><i class="fa fa-linkedin-square fa-2x fa-fw"></i>
+                    LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="contactLink"><a href="https://github.com/zach-allgood"><i class="fa fa-github-square fa-2x fa-fw"></i>
+                    GitHub</a></p>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <footer>
+        <p class="footer-text">&copy; 2016 Zach Allgood</p>
+    </footer>
 </div>
 </body>
 </html>

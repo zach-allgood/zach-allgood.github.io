@@ -4,6 +4,8 @@
 
 html, body{
     color: #4d4d4d;
+    height: 100%;
+    position: relative;
 }
 
 hr{
@@ -52,6 +54,81 @@ span.origin {
 }
 
 /*
+    NAV STYLES
+*/
+
+.navbar {
+    border: 0;
+    background-color: #4d4d4d;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+}
+
+.navbar .navbar-nav {
+    float: none;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+.navbar .nav > li {
+    display: block;
+    float: none;
+    height: 60px;
+}
+
+.navbar .nav > li a {
+    display: block;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: #b66bdb;
+    color: #FFFFFF;
+}
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+    background: #222222;
+}
+
+.fixed .navbar {
+    position: fixed;
+    top: 0px;
+}
+
+@media (min-width: 768px){
+    .navbar {
+        width: 110px;
+        left: auto;
+    }
+    .navbar .nav > li {
+        height: 80px;
+    }
+
+    .navbar .nav > li a {
+        height: 80px;
+        padding-top: 30px;
+    }
+
+    .fixed .navbar {
+        top: 60px;
+    }
+}
+
+/*
     TOP DIV (LANDING AREA)
 */
 
@@ -70,7 +147,8 @@ span.origin {
     background-size: cover;
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='view/img/background.jpg', sizingMethod='scale')";
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='view/img/background.jpg', sizingMethod='scale');
-    padding: 0px;
+    padding: 0;
+    position: relative;
 }
 
 #landing .container {
@@ -96,6 +174,31 @@ span.origin {
     opacity: 0.75;
     filter: alpha(opacity=75);
     z-index: 5;
+    height: 100%;
+}
+
+#landing .scroll-down {
+    height: 80px;
+    width:100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #4d4d4d;
+    text-align: center;
+    z-index: 10;
+}
+
+ #landing .scroll-down .fa {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-right: 2px;
+    padding-top: 20px;
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
 @media screen and (min-width: 1200px){
@@ -114,6 +217,11 @@ span.origin {
     #landing .container p.tag-line {
         font-size: 24pt;
     }
+
+    #landing .scroll-down {
+        width: 110px;
+        right: 5%;
+    }
 }
 
 /*
@@ -122,6 +230,7 @@ span.origin {
 
 #personal .row > div {
     margin-bottom: 35px;
+    text-align: center;
 }
 
 #personal .portrait {
@@ -129,7 +238,17 @@ span.origin {
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 3px solid rgba(154,50,205, 0.5);
-    width: 100%;
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    #personal .row > div {
+        text-align: left;
+    }
+
+    #personal .portrait {
+        width: 100%;
+    }
 }
 
 /*
@@ -152,6 +271,10 @@ span.origin {
     font-weight: 500;
 }
 
+#experience .job-title, #experience .job-desc, #experience .degree, #experience .school-desc {
+    margin-left: 5%;
+}
+
 #experience .timespan{
     font-style: italic;
 }
@@ -160,4 +283,79 @@ span.origin {
     width: 100%;
     display: block;
     margin-bottom: 5px;
+}
+
+@media (min-width: 992px) {
+    #experience .job-title, #experience .job-desc, #experience .degree, #experience .school-desc {
+        margin-left: auto;
+    }
+}
+
+/*
+    SKILLS DIV STYLES
+*/
+
+.skill-col {
+    text-align: center;
+    padding: 10px;
+}
+
+.skill-col:nth-of-type(even) {
+    background-color: #e5e5e5;
+}
+
+.skill-col .subtitle {
+    margin: 10px auto 25px auto;
+    font-size: 20pt;
+}
+
+.skills-list {
+    padding: 0;
+}
+
+.skill {
+    list-style: none;
+    margin: 10px auto;
+    font-size: 12pt;
+}
+
+@media (min-width: 992px) {
+    #skills .row{
+        display: flex;
+    }
+}
+
+/*
+    CONTACTS DIV STYLES
+*/
+
+#contact {
+    background-color: #4d4d4d;
+    color: #F0F0F0;
+}
+
+#contact .container {
+    padding-bottom: 0;
+}
+
+#contact .row {
+    font-size: 16px;
+}
+
+#contact a{
+    color: #b66bdb;
+    text-decoration: none;
+}
+
+#contact a:hover{
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+footer p.footer-text {
+    margin: 0;
 }
