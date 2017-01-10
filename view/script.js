@@ -4,6 +4,7 @@ $(document).ready(function () {
     loadLanding();
     loadNavigation();
     applyResize();
+    checkHash();
 });
 
 function loadLanding() {
@@ -18,6 +19,7 @@ function loadNavigation()
 {
     applyClickEvent();
     applyNavigationFixForPhone();
+    applyScrollSpy();
     applyStickyNavigation();
 }
 
@@ -43,6 +45,14 @@ function applyNavigationFixForPhone()
     $('.navbar li a').click(function(event)
     {
         $('.navbar-collapse').removeClass('in').addClass('collapse');
+    });
+}
+
+function applyScrollSpy()
+{
+    $('#side-nav').on('activate.bs.scrollspy', function()
+    {
+        window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
     });
 }
 
@@ -78,4 +88,14 @@ function applyResize()
 
         $('#landing').css({ height: ($(window).height()) +'px' });
     });
+}
+
+function checkHash()
+{
+    lstrHash = window.location.hash.replace('#/', '#');
+
+    if($('a[href="'+ lstrHash +'"]').length > 0)
+    {
+        $('a[href="'+ lstrHash +'"]').trigger('click');
+    }
 }
