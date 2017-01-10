@@ -2,7 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="504131dc-0ad0-429f-af32-605348769eed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/script.js" afterPath="$PROJECT_DIR$/view/script.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/animated.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/screen-reader.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/scss/font-awesome.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zach-allgood.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +68,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="-1847">
               <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
               <folding>
                 <element signature="e#625#633#0" expanded="true" />
@@ -40,7 +82,7 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="-38">
               <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding />
             </state>
@@ -50,7 +92,7 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
+            <state relative-caret-position="1530">
               <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
               <folding />
             </state>
@@ -122,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -156,7 +199,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -254,17 +296,18 @@
       <workItem from="1481310087344" duration="10146000" />
       <workItem from="1481741473342" duration="12720000" />
       <workItem from="1484086133872" duration="2039000" />
+      <workItem from="1484088612430" duration="168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55360000" />
+    <option name="totallyTimeSpent" value="55528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1840" y="156" width="1840" height="1177" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2925473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2958843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -318,31 +361,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/css/styles.css" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#625#633#0" expanded="true" />
-            <element signature="e#636#644#0" expanded="true" />
-            <element signature="e#10191#10197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="e#625#633#0" expanded="true" />
-            <element signature="e#636#644#0" expanded="true" />
-            <element signature="e#10191#10197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.css" />
     <entry file="file://$PROJECT_DIR$/src/css/pretty.less" />
     <entry file="file://$PROJECT_DIR$/package.json" />
@@ -448,7 +466,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="1530">
           <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
           <folding />
         </state>
@@ -458,13 +476,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="1723" column="0" selection-start-line="1723" selection-start-column="0" selection-end-line="1723" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="-1847">
           <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
           <folding>
             <element signature="e#625#633#0" expanded="true" />
@@ -474,9 +491,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/img/background.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/img/me.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="-38">
           <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding />
         </state>
